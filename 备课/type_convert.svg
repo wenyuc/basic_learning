@@ -1,0 +1,14 @@
+<svg class="leading-none mm-aizivi-1" style="" xmlns="http://www.w3.org/2000/svg"><style>.mm-aizivi-1 { line-height: 1; }
+.mm-aizivi-1 a { color: #0097e6; }
+.mm-aizivi-1 a:hover { color: #00a8ff; }
+.mm-aizivi-1-g &gt; path { fill: none; }
+.mm-aizivi-1-g &gt; g &gt; circle { cursor: pointer; }
+.mm-aizivi-1-fo &gt; div { display: inline-block; font: 300 16px/20px sans-serif; white-space: nowrap; }
+.mm-aizivi-1-fo code { font-size: calc(1em - 2px); color: #555; background-color: #f0f0f0; border-radius: 2px; }
+.mm-aizivi-1-fo :not(pre) &gt; code { padding: .2em .4em; }
+.mm-aizivi-1-fo del { text-decoration: line-through; }
+.mm-aizivi-1-fo em { font-style: italic; }
+.mm-aizivi-1-fo strong { font-weight: bolder; }
+.mm-aizivi-1-fo pre { margin: 0; padding: .2em .4em; }
+
+</style><g class="mm-aizivi-1-g" transform="translate(-68.9061460815891,221.1666717529297) scale(1.042785165711026)"><path d="M208,10C248,10,248,-15,288,-15" stroke="rgb(255, 127, 14)" stroke-width="2"></path><path d="M208,10C248,10,248,10,288,10" stroke="rgb(44, 160, 44)" stroke-width="2"></path><path d="M208,10C248,10,248,35,288,35" stroke="rgb(214, 39, 40)" stroke-width="2"></path><g transform="translate(288, 15)"><rect x="-1" y="19" width="193" height="2" fill="rgb(214, 39, 40)"></rect><foreignObject class="mm-aizivi-1-fo" x="8" y="0" height="20" width="175" style="opacity: 1;"><div xmlns="http://www.w3.org/1999/xhtml">类型转换 str() int() float()</div></foreignObject></g><g transform="translate(288, -10)"><rect x="-1" y="19" width="323" height="2" fill="rgb(44, 160, 44)"></rect><foreignObject class="mm-aizivi-1-fo" x="8" y="0" height="20" width="305" style="opacity: 1;"><div xmlns="http://www.w3.org/1999/xhtml">字符串检查函数 isdigit() isalpha() isalnum()</div></foreignObject></g><g transform="translate(288, -35)"><rect x="-1" y="19" width="193" height="2" fill="rgb(255, 127, 14)"></rect><foreignObject class="mm-aizivi-1-fo" x="8" y="0" height="20" width="175" style="opacity: 1;"><div xmlns="http://www.w3.org/1999/xhtml">类型判别 type isinstance</div></foreignObject></g><g transform="translate(80,-10)"><rect x="-1" y="18" width="130" height="4" fill="rgb(31, 119, 180)"></rect><circle stroke-width="1.5" cx="128" cy="20" r="6" stroke="rgb(31, 119, 180)" fill="rgb(255, 255, 255)"></circle><foreignObject class="mm-aizivi-1-fo" x="8" y="0" height="20" width="112" style="opacity: 1;"><div xmlns="http://www.w3.org/1999/xhtml">类型判别和转换</div></foreignObject></g></g></svg>
