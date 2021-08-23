@@ -1,0 +1,14 @@
+{
+    "Peter": {
+        "math": 96,
+        "physics": 97
+    },
+    "Andy": {
+        "math": 88,
+        "physics": 76
+    },
+    "Lucy": {
+        "math": 96,
+        "physics": 87
+    }
+}
