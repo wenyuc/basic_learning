@@ -1,0 +1,72 @@
+1. How to check the supported shell in the workstation
+% cat /etc/shells
+
+2. How to check working shell
+% echo $SHELL
+
+3. How to change shell to another
+% chsh -s /bin/bash
+
+4. How to start-up jupyter notebook
+% cd ~/work2/src/basic_learning
+% jupyter notebook
+
+5. How to check various python installed in the system
+(base) wenyuc@chenwenyus-MacBook-Pro ~ % where python
+/Applications/anaconda3/bin/python
+/Applications/anaconda3/bin/python
+/usr/bin/python
+
+(base) wenyuc@chenwenyus-MacBook-Pro bin % where python3|xargs ls -l
+lrwxr-xr-x  1 wenyuc  wheel       9 Jan 12  2021 /Applications/anaconda3/bin/python3 -> python3.7
+lrwxr-xr-x  1 wenyuc  wheel       9 Jan 12  2021 /Applications/anaconda3/bin/python3 -> python3.7
+lrwxr-xr-x  1 root    admin       9 Mar 17  2020 /Library/Frameworks/Python.framework/Versions/3.7/bin/python3 -> python3.7
+-rwxr-xr-x  1 root    wheel  167088 Dec  8 07:39 /usr/bin/python3
+lrwxr-xr-x  1 root    wheel      69 Mar 17  2020 /usr/local/bin/python3 -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/python3
+lrwxr-xr-x  1 root    wheel      69 Mar 17  2020 /usr/local/bin/python3 -> ../../../Library/Frameworks/Python.framework/Versions/3.7/bin/python3
+
+6. Check All available packages
+% pip list --outdated --format=columns
+
+7. Use pip to upgrade single package
+% pip install --upgrade numpy
+
+8. Upgrade All packages
+solution 1:
+% pip install pip-review
+% pip-review --local --interactive    //input A to upgrade All packages
+
+solution2:
+import pip
+from subprocess import call
+from pip._internal.utils.misc import get_installed_distributions
+for dist in get_installed_distributions():
+    call("pip install -i  https://pypi.tuna.tsinghua.edu.cn/simple --upgrade " + dist.project_name, shell=True)
+
+solution3:
+pip freeze --local | grep -v '^-e' | cut -d = -f 1  | xargs -n1 pip install -U
+
+solution4:
+for i in `pip list -o --format legacy|awk '{print $1}'` ; do pip install --upgrade $i; done
+
+9. How to use brew on MacOS
+安装软件，如：brew install oclint
+卸载软件，如：brew uninstall oclint
+搜索软件，如：brew search oclint
+更新软件，如：brew upgrade oclint
+查看安装列表， 如：brew list
+更新Homebrew，如：brew update
+
+10. 安装homebrew-cask(包管理器，用于安装带界面的应用)
+安装命令：
+brew tap phinze/homebrew-cask && brew install brew-cask 
+brew-cask 操作命令
+brew cask install XXX
+brew cask search* 列出所有可以被安装的软件
+brew cask search drop 查找所有和 *drop* 相关的应用
+brew cask info thunder 查看 *迅雷* 应用的信息，这货安装的可是最新版本的迅雷哦！
+brew cash uninstall qq 卸载 *QQ*
+brew update && brew upgrade 更新所有应用程序
+
+安装 sublime-text3
+Brew cask install sublime-text
